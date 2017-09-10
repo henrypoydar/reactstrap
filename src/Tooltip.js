@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { placements } from 'popper.js';
+import PopperJS from 'popper.js';
 import Popper from './PopperContent';
 import { getTarget, DOMElement, mapToCssModules, omit } from './utils';
+
+const placements = PopperJS.placements;
 
 const propTypes = {
   placement: PropTypes.oneOf(placements),
